@@ -18,17 +18,19 @@ public class Main  {
 		int power = 1;
 		int max = 0;
 		int power_prev = 1;
-
+		int x = 2;
 		// All highly complex numbers are even numbers.
-		for(int i = 2; i <= n; i += 2){
+		for(int i = 2; i <= n; i += x){
 			
+			if(i >= 60)
+				x = 10;
 			factors = 0;
 			power = 1;
 			int temp = i;
 			boolean flag = false;
 
 			// All highly composite numbers greater than or equal to 60 are divisible by 10 (my observation).
-			if((i < 60) || (i >= 60 && i % 10 == 0)){
+			if((i < 60) || (i >= 60 && i % 12 == 0)){
 			for (int j = 2; j <= temp / j; j++) {
 				
                         while (temp % j == 0) { 
