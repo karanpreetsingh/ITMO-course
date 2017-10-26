@@ -28,6 +28,7 @@ public class ITMO{
     }
 
   public static void main(String[] args) throws IOException{
+    //Just a new pr
     try(BufferedReader br = new BufferedReader(new FileReader("input.txt"));
         PrintWriter out = new PrintWriter("output.txt");){
         StringTokenizer token = new StringTokenizer(br.readLine());
